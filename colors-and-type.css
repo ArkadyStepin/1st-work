@@ -7,9 +7,8 @@
 .green {
     width        : 70px;
     height       : 70px;
-    left         : 150px;
-    top          : 145px;
     border-radius: 6px;
+    margin-bottom: 20px;
 }
 
 .DShae100 {

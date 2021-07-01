@@ -1,9 +1,4 @@
 .bodyst {
-  position   : absolute;
-  width      : 301px;
-  height     : 48px;
-  left       : 913px;
-  top        : 418px;
   font-family: Montserrat;
   font-style : normal;
   font-weight: normal;
@@ -13,11 +8,6 @@
 }
 
 .h1 {
-  position   : absolute;
-  width      : 369px;
-  height     : 59px;
-  left       : 913px;
-  top        : 145px;
   font-family: Montserrat;
   font-style : normal;
   font-weight: bold;
@@ -27,11 +17,6 @@
 }
 
 .h2 {
-  position   : absolute;
-  width      : 312px;
-  height     : 47px;
-  left       : 913px;
-  top        : 255px;
   font-family: Montserrat;
   font-style : normal;
   font-weight: bold;
@@ -41,12 +26,6 @@
 }
 
 .h3 {
-  position: absolute;
-  width   : 186px;
-  height  : 15px;
-  left    : 913px;
-  top     : 353px;
-
   font-family   : Montserrat;
   font-style    : normal;
   font-weight   : bold;
@@ -54,4 +33,23 @@
   line-height   : 15px;
   text-transform: uppercase;
   color         : #1f2041;
+}
+.left {
+padding-top   : 145px;
+padding-left : 150px;
+display       : flex;
+flex-direction: column;
+align-content : stretch;
+}
+.right {
+padding-top   : 145px;
+padding-right : 158px;
+display       : flex;
+flex-direction: column;
+align-content : stretch;
+}
+.content {
+  display : flex;
+  flex-direction: row;
+justify-content: space-between;
 }
