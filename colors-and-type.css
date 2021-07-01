@@ -1,0 +1,41 @@
+.DShae100,
+.DShade75,
+.DShade50,
+.DShade25,
+.DShade5,
+.purple,
+.green {
+    width        : 70px;
+    height       : 70px;
+    left         : 150px;
+    top          : 145px;
+    border-radius: 6px;
+}
+
+.DShae100 {
+    background: #1F2041;
+}
+
+.DShade75 {
+    background: rgba(31, 32, 65, 0.75);
+}
+
+.DShade50 {
+    background: rgba(31, 32, 65, 0.5);
+}
+
+.DShade25 {
+    background: rgba(31, 32, 65, 0.25);
+}
+
+.DShade5 {
+    background: rgba(31, 32, 65, 0.05)
+}
+
+.purple {
+    background: #BC9CFF;
+}
+
+.green {
+    background: #6FCF97;
+}
