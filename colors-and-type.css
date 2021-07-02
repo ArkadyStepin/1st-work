@@ -5,36 +5,36 @@
 .DShade5,
 .purple,
 .green {
-    width        : 70px;
-    height       : 70px;
-    border-radius: 6px;
-    margin-bottom: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-bottom: 20px;
 }
 
 .DShae100 {
-    background: #1F2041;
+  background: #1f2041;
 }
 
 .DShade75 {
-    background: rgba(31, 32, 65, 0.75);
+  background: rgba(31, 32, 65, 0.75);
 }
 
 .DShade50 {
-    background: rgba(31, 32, 65, 0.5);
+  background: rgba(31, 32, 65, 0.5);
 }
 
 .DShade25 {
-    background: rgba(31, 32, 65, 0.25);
+  background: rgba(31, 32, 65, 0.25);
 }
 
 .DShade5 {
-    background: rgba(31, 32, 65, 0.05)
+  background: rgba(31, 32, 65, 0.05);
 }
 
 .purple {
-    background: #BC9CFF;
+  background: #bc9cff;
 }
 
 .green {
-    background: #6FCF97;
+  background: #6fcf97;
 }
