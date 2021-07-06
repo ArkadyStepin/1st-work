@@ -32,15 +32,13 @@ span {
   text-align: right;
   color: rgba(31, 32, 65, 0.5);
 }
-.input-line {
+.input {
   width: 320px;
   height: 44px;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
-}
-.input-text {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -48,7 +46,15 @@ span {
   line-height: 18px;
   color: rgba(31, 32, 65, 0.25);
 }
-.email {
+.box {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-sizing: border-box;
+  border-radius: 4px;
 }
