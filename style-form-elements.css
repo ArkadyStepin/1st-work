@@ -50,9 +50,10 @@ span {
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
+  padding-right: 130px;
 }
 
-input:hover {
+.input:hover {
   color: rgba(31, 32, 65, 0.75);
   border: 1px solid rgba(31, 32, 65, 0.5);
   box-sizing: border-box;
@@ -77,4 +78,12 @@ select:focus {
   border: 1px solid rgba(31, 32, 65, 0.5);
   box-sizing: border-box;
   border-radius: 4px;
+}
+.input-date {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.input-date-dropd {
+  width: 150px;
+  height: 44px;
 }
