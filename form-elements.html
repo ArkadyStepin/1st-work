@@ -32,19 +32,31 @@
         <input
           class="input input-date input-date-dropd"
           type="date"
-          placeholder="дд.ММ.ГГГГ"/>
+          placeholder="дд.ММ.ГГГГ"
+        />
       </div>
     </div>
-    
-  <div class="column-2">
-      <div class="box">
-      <input type="checkbox" />Можно курить
-      <input type="checkbox" />
-      <input type="checkbox" />
-   </div>
-  </div>
 
-      <div class="column-3"></div>
+    <div class="column-2">
+      <div class="box">
+        <input type="checkbox" id="smoke" />
+        <label for="smoke"> Можно курить </label>
+
+        <input type="checkbox" id="pets" />
+        <label for="pets"> Можно с питомцами </label>
+        <input type="checkbox" id="visitors" />
+        <label for="visitors">
+          Можно пригласить гостей <br />(до 10 человек)
+        </label>
+      </div>
+      <div class="box">
+        <input type="radio" id="mail" />
+        <label for="mail"> Мужчина </label>
+        <input type="radio" id="femail" />
+        <label for="femail"> Женщина </label>
+      </div>
     </div>
+
+    <div class="column-3"></div>
   </body>
 </html>

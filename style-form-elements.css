@@ -87,3 +87,9 @@ select:focus {
   width: 150px;
   height: 44px;
 }
+input[type="checkbox"]:checked {
+  background: #ffffff;
+  border: 1px solid #bc9cff;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
