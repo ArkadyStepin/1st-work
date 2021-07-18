@@ -104,6 +104,25 @@ input[type="checkbox"]:checked {
   font-size: 14px;
   line-height: 18px;
   color: rgba(31, 32, 65, 0.5);
+  padding-left: 20px;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-left: -10px;
+  margin-right: 10px;
+  transition: 0.3s;
+  background-image: url(img/Rectangle-2.png);
+}
+input[type="checkbox"]:checked + label::before {
+  content: "";
+  background-image: url(img/Vector.png), url(img/Rectangle-2.png);
 }
 .radio {
   font-family: Montserrat;
