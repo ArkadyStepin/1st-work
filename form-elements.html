@@ -6,67 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Elements</title>
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="style-form-elements.css" />
   </head>
   <body>
-    <div class="column-1">
-      <div class="box">
-        <div class="block-name">TEXT FIELD <span>DEFAULT</span></div>
-        <input class="input" type="email" placeholder="Email" />
-      </div>
-      <div class="box" onClick="hello()">
-        <select action="">
-          <option value="">Сколько гостей</option>
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-          <option value="">4</option>
-          <option value="">5 и более</option>
-        </select>
-      </div>
-      <div class="box">
-        <input class="input input-date" type="date" placeholder="дд.ММ.ГГГГ" />
-      </div>
+    <div class="content">
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <div class="block-name">TEXT FIELD <span>DEFAULT</span></div>
+            <input class="input" type="email" placeholder="Email" />
+          </div>
+          <div class="box" onClick="hello()">
+            <select action="">
+              <option value="">Сколько гостей</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5 и более</option>
+            </select>
+          </div>
+          <div class="box">
+            <input
+              class="input input-date"
+              type="date"
+              placeholder="дд.ММ.ГГГГ"
+            />
+          </div>
 
-      <div class="box">
-        <input
-          class="input input-date input-date-dropd"
-          type="date"
-          placeholder="дд.ММ.ГГГГ"
-        />
+          <div class="box">
+            <input
+              class="input input-date input-date-dropd"
+              type="date"
+              placeholder="дд.ММ.ГГГГ"
+            />
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="box">
+            <div class="checkbox">
+              <input type="checkbox" id="smoke" />
+              <label for="smoke"> Можно курить </label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="pets" />
+              <label for="pets"> Можно с питомцами </label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="visitors" />
+              <label for="visitors">
+                Можно пригласить гостей <br />
+                (до 10 человек)
+              </label>
+            </div>
+          </div>
+          <div class="box">
+            <div>
+              <input type="radio" id="mail" name="gender" />
+              <label class="radio" for="mail"> Мужчина </label>
+            </div>
+            <div>
+              <input type="radio" id="femail" name="gender" />
+              <label class="radio" for="femail"> Женщина </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">ASD</div>
       </div>
     </div>
-
-    <div class="column-2">
-      <div class="box">
-        <div>
-          <input type="checkbox" id="smoke" />
-          <label class="checkbox" for="smoke"> Можно курить </label>
-        </div>
-        <div>
-          <input type="checkbox" id="pets" />
-          <label class="checkbox" for="pets"> Можно с питомцами </label>
-        </div>
-        <div>
-          <input type="checkbox" id="visitors" />
-          <label class="checkbox" for="visitors">
-            Можно пригласить гостей (до 10 человек)
-          </label>
-        </div>
-      </div>
-      <div class="box">
-        <div>
-          <input type="radio" id="mail" name="gender" />
-          <label class="radio" for="mail"> Мужчина </label>
-        </div>
-        <div>
-          <input class="checkbox" type="radio" id="femail" name="gender" />
-          <label class="radio" for="femail"> Женщина </label>
-        </div>
-      </div>
-    </div>
-
-    <div class="column-3"></div>
   </body>
 </html>

@@ -1,20 +1,12 @@
-body {
-  margin: 140px;
+.columns {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.column-1 {
-  display: flex;
-  flex-direction: column;
+.column {
+  min-width: 300px;
 }
-.column-2 {
-  display: flex;
-  flex-direction: column;
-}
-.column-3 {
-  display: flex;
-  flex-direction: column;
-}
+
 .block-name {
   font-family: Montserrat;
   font-style: normal;
@@ -50,7 +42,6 @@ span {
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
-  padding-right: 130px;
 }
 
 .input:hover,
@@ -91,39 +82,44 @@ select:focus {
   width: 150px;
   height: 44px;
 }
-input[type="checkbox"]:checked {
-  background: #ffffff;
-  border: 1px solid #bc9cff;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
+
 .checkbox {
+  display: flex;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: rgba(31, 32, 65, 0.5);
-  padding-left: 20px;
+  margin-right: 30px;
 }
-input[type="checkbox"] {
-  display: none;
+.checkbox + .checkbox {
+  margin-top: 10px;
 }
-input[type="checkbox"] + label::before {
+
+.checkbox input {
+  width: 0;
+}
+.checkbox input::before {
   content: "";
   display: inline-block;
   width: 20px;
   height: 20px;
   vertical-align: middle;
-  margin-left: -10px;
-  margin-right: 10px;
   transition: 0.3s;
-  background-image: url(img/Rectangle-2.png);
+  background: url(img/checkbox.svg) no-repeat;
 }
-input[type="checkbox"]:checked + label::before {
+.checkbox label {
+  padding-left: 30px;
+  padding-top: 2px;
+  cursor: pointer;
+}
+
+.checkbox input:checked::before {
   content: "";
-  background-image: url(img/Vector.png), url(img/Rectangle-2.png);
+  background-image: url(img/checkbox-checked.svg);
 }
+
 .radio {
   font-family: Montserrat;
   font-style: normal;
