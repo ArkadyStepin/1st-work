@@ -43,6 +43,13 @@ span {
   flex-direction: column;
   margin-bottom: 40px;
 }
+.gender-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  width: 220px;
+}
 
 .input:hover,
 .input:focus {
@@ -93,6 +100,7 @@ select:focus {
   color: rgba(31, 32, 65, 0.5);
   margin-right: 30px;
 }
+
 .checkbox + .checkbox {
   margin-top: 10px;
 }
@@ -100,6 +108,7 @@ select:focus {
 .checkbox input {
   width: 0;
 }
+
 .checkbox input::before {
   content: "";
   display: inline-block;
@@ -109,6 +118,7 @@ select:focus {
   transition: 0.3s;
   background: url(img/checkbox.svg) no-repeat;
 }
+
 .checkbox label {
   padding-left: 30px;
   padding-top: 2px;
@@ -117,14 +127,40 @@ select:focus {
 
 .checkbox input:checked::before {
   content: "";
-  background-image: url(img/checkbox-checked.svg);
+  background: url(img/checkbox-checked.svg);
 }
 
-.radio {
+.radio-button {
+  display: flex;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.5);
+}
+
+.radio-button input {
+  width: 0;
+}
+
+.radio-button input::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  transition: 0.3s;
+  background: url(img/radio-button.svg) no-repeat;
+}
+
+.radio-button input:checked::before {
+  content: "";
+  background: url(img/radio-button-on.svg) no-repeat;
+}
+
+.radio-button label {
+  padding-left: 30px;
+  margin-top: -2px;
+  cursor: pointer;
 }
