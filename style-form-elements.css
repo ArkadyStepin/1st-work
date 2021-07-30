@@ -60,12 +60,11 @@ span {
 .input:focus {
   color: rgba(31, 32, 65, 0.75);
   border: 1px solid rgba(31, 32, 65, 0.5);
-
-  border-radius: 4px;
 }
 
 .input:focus-visible {
-  outline-color: rgba(31, 32, 65, 0);
+  outline-color: rgba(31, 32, 65, 0.5);
+  border-radius: 4px;
 }
 
 select {
@@ -174,6 +173,7 @@ select:focus {
   margin-top: -2px;
   cursor: pointer;
 }
+
 .toggle {
   font-family: Montserrat;
   font-style: normal;
