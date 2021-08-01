@@ -204,8 +204,28 @@ select:focus {
   cursor: pointer;
   padding-top: 1px;
 }
-.like {
+
+.like-button button {
   width: 40px;
   height: 20px;
-  background: red;
+  background: url(img/no-favorite.svg) no-repeat;
+  border-radius: 10px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+.range-slider input {
+  width: 266px;
+  height: 6px;
+}
+
+.buttons button {
+  margin-bottom: 30px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  width: 99px;
+  height: 44px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 }
