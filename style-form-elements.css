@@ -159,7 +159,7 @@ select:focus {
   vertical-align: middle;
   width: 20px;
   height: 20px;
-  transition: 0.3s;
+  transition: 0s;
   background: url(img/radio-button.svg) no-repeat;
 }
 
@@ -168,10 +168,15 @@ select:focus {
   background: url(img/radio-button-on.svg) no-repeat;
 }
 
+.radio-button input:checked + label {
+  opacity: 0.75;
+}
+
 .radio-button label {
   padding-left: 30px;
   margin-top: -2px;
   cursor: pointer;
+  opacity: 0.5;
 }
 
 .toggle {
@@ -191,13 +196,15 @@ select:focus {
   vertical-align: middle;
   width: 40px;
   height: 20px;
+  opacity: 0.25;
   transition: 0.3s;
   background: url(img/toggle-off.svg) no-repeat;
 }
 
 .toggle input:checked::before {
   content: "";
-  background: url(img/togle-on.svg) no-repeat;
+  background-position-x: 20px;
+  opacity: 1;
 }
 .toggle label {
   padding-left: 50px;
@@ -205,12 +212,25 @@ select:focus {
   padding-top: 1px;
 }
 
-.like-button button {
+.like-button {
   width: 40px;
   height: 20px;
-  background: url(img/no-favorite.svg) no-repeat;
+  background: 5px center url(img/no-favorite.svg) no-repeat;
   border-radius: 10px;
   border: 1px solid rgba(31, 32, 65, 0.25);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  padding-left: 15px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.like-button.like-button--active {
+  background-image: url(img/favorite.svg);
+  color: #bc9cff;
+  border: 1px solid #bc9cff;
 }
 .range-slider input {
   width: 266px;
