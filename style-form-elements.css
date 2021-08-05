@@ -237,15 +237,29 @@ select:focus {
   height: 6px;
 }
 
-.buttons button {
+.button-color {
   margin-bottom: 30px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
+  color: #ffffff;
   font-size: 12px;
   line-height: 15px;
   width: 99px;
   height: 44px;
   border-radius: 22px;
+  border: 2px;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+}
+.button-color:active {
+  opacity: 0.5;
+}
+.button-border {
+  background: #ffffff;
+  color: #bc9cff;
+}
+.button-no-color {
+  background: #ffffff;
+  border: 0px;
+  color: #bc9cff;
 }
