@@ -194,16 +194,19 @@ select:focus {
   content: "";
   display: inline-block;
   vertical-align: middle;
-  width: 40px;
+  width: 39px;
   height: 20px;
+  border-radius: 19px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+
   opacity: 0.25;
   transition: 0.3s;
-  background: url(img/toggle-off.svg) no-repeat;
+  background: 5px center url(img/toggle.svg) no-repeat;
 }
 
 .toggle input:checked::before {
   content: "";
-  background-position-x: 20px;
+  background-position-x: 22px;
   opacity: 1;
 }
 .toggle label {
@@ -255,11 +258,46 @@ select:focus {
   opacity: 0.5;
 }
 .button-border {
+  margin-bottom: 30px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  width: 95px;
+  height: 40px;
+  border: 0px;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 22px;
+  background: #ffffff;
+  color: #bc9cff;
+  margin: 2px 2px;
+}
+.under-button:active {
+  opacity: 0.5; /*буквы тоже теряют цвет,хз, что делать с этим. надо либо делать бэкграунд и убавять насыщенность в цвете,
+  или как-то делать, что бы oпасити не распростронялось на буквы*/
+}
+.under-button {
+  width: 99px;
+  height: 44px;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+}
+.button-no-color {
+  margin-bottom: 30px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  width: 99px;
+  height: 44px;
+  font-size: 12px;
+  line-height: 15px;
+  border: 0;
+  border-radius: 22px;
   background: #ffffff;
   color: #bc9cff;
 }
-.button-no-color {
-  background: #ffffff;
-  border: 0px;
-  color: #bc9cff;
+.button-no-color:active {
+  color: rgba(31, 32, 65, 0.5);
 }
