@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cards</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-Cards
-</body>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style-form-elements.css" />
+
+    <link rel="stylesheet" href="cards.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <h1>Найдём номера под <br />ваши пожелания</h1>
+            <div class="booking-date">
+              <div class="block-name">
+                ПРИБЫТИЕ
+                <input
+                  class="input input-date input-date-dropd"
+                  type="date"
+                  placeholder="дд.ММ.ГГГГ"
+                />
+              </div>
+              <div class="block-name">
+                ВЫЕЗД
+                <input
+                  class="input input-date input-date-dropd"
+                  type="date"
+                  placeholder="дд.ММ.ГГГГ"
+                />
+              </div>
+            </div>
+            <div class="block-name">
+              ГОСТИ
+              <select action="">
+                <option value="">Сколько гостей</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5 и более</option>
+              </select>
+              <button class="button-pay">ПОДОБРАТЬ НОМЕР</button>
+            </div>
+          </div>
+        </div>
+        <div class="column">dvdv</div>
+        <div class="column">dvdv</div>
+      </div>
+    </div>
+  </body>
 </html>

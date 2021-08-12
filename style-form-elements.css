@@ -8,25 +8,6 @@
   min-width: 300px;
 }
 
-.block-name {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: left;
-  color: #1f2041;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5px;
-}
-
-span {
-  font-weight: normal;
-  text-align: right;
-  color: rgba(31, 32, 65, 0.5);
-}
-
 .input {
   width: 320px;
   height: 44px;
@@ -40,6 +21,7 @@ span {
   font-size: 14px;
   line-height: 18px;
   color: rgba(31, 32, 65, 0.25);
+  margin-bottom: 40px;
 }
 
 .box {
