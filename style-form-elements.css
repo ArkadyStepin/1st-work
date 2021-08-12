@@ -277,6 +277,7 @@ select:focus {
   или как-то делать, что бы oпасити не распростронялось на буквы*/
 }
 .under-button {
+  margin-bottom: 20px;
   width: 99px;
   height: 44px;
   font-size: 12px;
@@ -300,4 +301,20 @@ select:focus {
 }
 .button-no-color:active {
   color: rgba(31, 32, 65, 0.5);
+}
+.button-pay {
+  width: 320px;
+  height: 44px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%),
+    url(img/arrow.svg) left;
+  border-radius: 22px;
+  border: 0ch;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
 }
